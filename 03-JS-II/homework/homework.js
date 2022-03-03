@@ -8,15 +8,15 @@ function obtenerMayor(x, y) {
   if(x > y){
     return x
   } else {
-  return y;
-}
+  return y
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if( edad >= 18) {
+  if(edad >= 18) {
     return "Allowed"
   } else {
     return "Not allowed"
@@ -32,7 +32,7 @@ function conection(status) {
   if(status === 1){
     return "Online"
   }
-  else if (status === 2) {
+  else if (status === 2){
     return "Away"
   }
   else {
@@ -132,6 +132,7 @@ function operadoresLogicos(num1, num2, num3) {
   } else {
     return false;
   }
+}
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -145,9 +146,9 @@ if(numero === 0 || numero === 1 ){
 for(i= 2; i < numero ; i++) {
   if(numero % i === 0){
   return false;
+  } else {
+  return true;
   }
-}
-return true;
 }
 
 function esVerdadero(valor){
@@ -157,9 +158,9 @@ function esVerdadero(valor){
 
 if(valor === true) {
   return "Soy verdadero";
-} else if (valor === false) {
+  } else if (valor === false) {
   return "Soy falso";
-}
+  }
 }
 
 function tablaDelSeis(){
@@ -200,7 +201,6 @@ function doWhile(numero) {
   while(i < 8)
   return a
 }
-}
 
 
 // No modificar nada debajo de esta línea
@@ -222,4 +222,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-};
+};}
